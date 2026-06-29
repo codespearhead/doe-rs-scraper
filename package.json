@@ -1,0 +1,35 @@
+{
+  "name": "doe-rs-scraper",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\"><a href=\"https://github.com/codespearhead/doe-rs-scraper/\">doe-rs-scraper</a></h1>",
+  "homepage": "https://github.com/codespearhead/doe-rs-scraper#readme",
+  "bugs": {
+    "url": "https://github.com/codespearhead/doe-rs-scraper/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codespearhead/doe-rs-scraper.git"
+  },
+  "license": "MIT",
+  "author": "codespearhead",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node scrape_doe-rs.js",
+    "lint": "run-s lint:write",
+    "lint:write": "eslint . --fix",
+    "lint:write:dry-run": "eslint .",
+    "format": "run-s lint format:write",
+    "format:write": "prettier . --write",
+    "format:write:dry-run": "prettier . --check",
+    "test": "vitest --run --bail=1"
+  },
+  "devDependencies": {
+    "eslint": "^10.7.0",
+    "npm-run-all2": "^9.0.2",
+    "prettier": "^3.9.5",
+    "vitest": "^4.1.10"
+  },
+  "engines": {
+    "node": ">=24.x"
+  }
+}

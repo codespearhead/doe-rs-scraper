@@ -1,0 +1,38 @@
+.env
+deploy.tar
+__committed__/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+# [c83cf982-04d0-48b7-9130-e421b5b56945] Não faz commit dos artefatos de teste por que os tais devem ser gerenciados por algum outro servidor de armazenamento de objetos como o S3, a fim de evitar a explosão do tamanho do repositório devido a alterações neles, especialmente no que tange a arquivos binários.
+e2e/home.visual.spec.ts-snapshots
+e2e/report/*
+
+# Local Netlify folder
+.netlify
